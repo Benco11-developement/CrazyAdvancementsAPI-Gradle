@@ -11,7 +11,7 @@ repositories {
 }
 
 compileJava.options.encoding = 'Cp1252'
-targetCompatibility = sourceCompatibility = 1.8
+targetCompatibility = sourceCompatibility = 17
 
 group 'eu.endercentral'
 version '2.1.11'
