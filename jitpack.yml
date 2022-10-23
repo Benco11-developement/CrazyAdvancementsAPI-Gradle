@@ -6,5 +6,5 @@ install:
   - chmod +x gradlew
   - ./gradlew clean -xtest assemble publishToMavenLocal
   - rm -rf $HOME/.m2/repository/org/
-  - ls $HOME/.m2/repository/
-  - ls $HOME/.m2/repository/eu/endercentral/crazy_advancements/
+  - cp $HOME/.m2/repository/eu/endercentral/crazy_advancements/maven-metadata-local.xml $HOME/.m2/repository/eu/endercentral/crazy_advancements/2.1.11/maven-metadata-local.xml
+  - ls $HOME/.m2/repository/eu/endercentral/crazy_advancements/2.1.11/
