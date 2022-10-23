@@ -26,7 +26,7 @@ afterEvaluate {
     publishing {
         publications {
             release(MavenPublication) {
-                groupId = group
+                groupId = this.group
                 artifactId = "crazy_advancements"
                 version = this.version
             }
