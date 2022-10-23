@@ -4,5 +4,5 @@ before_install:
   - wget https://hub.spigotmc.org/jenkins/job/BuildTools/lastSuccessfulBuild/artifact/target/BuildTools.jar -O BuildTools.jar && java -jar BuildTools.jar --rev 1.19
 install:
   - chmod +x gradlew
-  - ./gradlew clean -Pgroup=com.github.Benco11-developement -Pversion=e1b456106f -xtest assemble publishToMavenLocal
+  - ./gradlew clean -xtest assemble publishToMavenLocal
   - rm -rf ~/.m2/repository/org
