@@ -1,4 +1,4 @@
 jdk:
   - openjdk17
-before_install:
+install:
   - ./script/jitpack.sh
