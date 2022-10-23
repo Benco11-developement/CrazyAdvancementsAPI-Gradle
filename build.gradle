@@ -26,9 +26,10 @@ afterEvaluate {
     publishing {
         publications {
             release(MavenPublication) {
-                groupId = this.group
+                groupId = 'eu.endercentral'
                 artifactId = "crazy_advancements"
-                version = this.version
+                version = '2.1.11'
+                from components.java
             }
         }
     }
