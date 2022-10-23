@@ -22,15 +22,13 @@ dependencies {
     implementation 'org.spigotmc:spigot:1.19-R0.1-SNAPSHOT'
 }
 
-afterEvaluate {
-    publishing {
-        publications {
-            release(MavenPublication) {
-                groupId = 'eu.endercentral'
-                artifactId = "crazy_advancements"
-                version = '2.1.11'
-                from components.java
-            }
+publishing {
+    publications {
+        release(MavenPublication) {
+            groupId = 'eu.endercentral'
+            artifactId = "crazy_advancements"
+            version = '2.1.11'
+            from components.java
         }
     }
 }
