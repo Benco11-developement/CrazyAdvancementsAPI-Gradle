@@ -1,5 +1,6 @@
 plugins {
     id 'java'
+    id 'maven-publish'
 }
 
 repositories {
@@ -19,4 +20,16 @@ version '2.1.11'
 dependencies {
     implementation 'io.netty:netty-all:4.1.84.Final'
     implementation 'org.spigotmc:spigot:1.19-R0.1-SNAPSHOT'
+}
+
+afterEvaluate {
+    publishing {
+        publications {
+            release(MavenPublication) {
+                groupId = group
+                artifactId = "crazy_advancements"
+                version = this.version
+            }
+        }
+    }
 }
